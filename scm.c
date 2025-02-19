@@ -1,15 +1,6 @@
 #include <stdio.h>
 #include <time.h>
 
-int main() {
-    char nome[100];
-    
-    printf("Qual é o seu nome? ");
-    fgets(nome, sizeof(nome), stdin);
-    
-    printf("Olá, %s", nome);
-}
-
 void soma(int a, int b) {
     printf("%d + %d = %d\n", a, b, a + b);
 }
@@ -31,6 +22,14 @@ void divide(int a, int b)
 }
 
 int main() {
+
+    char nome[100];
+    
+    printf("Qual é o seu nome? ");
+    fgets(nome, sizeof(nome), stdin);
+    
+    printf("Olá, %s", nome);
+    
     time_t local; //"local" is a variable of "time_t" data type.
     time(&local);
     
