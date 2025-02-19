@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <time.h>
 
+int main() {
+    char nome[100];
+    
+    printf("Qual é o seu nome? ");
+    fgets(nome, sizeof(nome), stdin);
+    
+    printf("Olá, %s", nome);
+}
+
 void soma(int a, int b) {
     printf("%d + %d = %d\n", a, b, a + b);
 }
