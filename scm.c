@@ -21,6 +21,14 @@ void divide(int a, int b)
     }
 }
 
+void subtrai(int a, int b) {
+    if (a >= b) { //verifica para ver se será possivel
+        printf("%d - %d = %d\n", a, b, a - b);
+    } else {
+        printf("Subtração não permitida:\n", a, b);
+    }
+}
+
 int main() {
 
     char nome[100];
@@ -39,5 +47,7 @@ int main() {
     multiplica(5, 3);
     divide(5,0);
     divide(5,2);
+    subtrai(5,3);
+	subtrai(3,5);
     return 0;
 }
