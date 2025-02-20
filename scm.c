@@ -25,7 +25,7 @@ void subtrai(int a, int b) {
     if (a >= b) { //verifica para ver se será possivel
         printf("%d - %d = %d\n", a, b, a - b);
     } else {
-        printf("Subtração não permitida:\n", a, b);
+        printf("Subtração não permitida:\n");
     }
 }
 
